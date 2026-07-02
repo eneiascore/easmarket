@@ -50,11 +50,11 @@ class Jogador {
         PD: 1.30,
         MEI: 1.15,
         MC: 1.15,
-        VOL: 1.00,
-        ZAG: 0.95,
-        LD: 0.90,
-        LE: 0.90,
-        GOL: 0.80
+        VOL: 1.05,
+        ZAG: 1.15,
+        LD: 1.00,
+        LE: 1.00,
+        GOL: 0.70
     }
 
     fatorPosicao = fatoresPosicao[this.Posicao]
@@ -120,5 +120,36 @@ console.log(`${Rice.Nome} vale €${Rice.calcularValor().toLocaleString('pt-BR')
 const ElliotAnderson = new Jogador("Elliot Anderson","23", "Nottingham Forest", "Inglaterra", "MC", "83", "89")
 console.log(`${ElliotAnderson.Nome} vale €${ElliotAnderson.calcularValor().toLocaleString('pt-BR')}`)
 
+// novos testes com defensores
+const Saliba = new Jogador("Saliba","25", "Arsenal", "França", "ZAG", "89", "91")
+console.log(`${Saliba.Nome} vale €${Saliba.calcularValor().toLocaleString('pt-BR')}`)
 
+const Cubarsi = new Jogador("Cubarsi","19", "Barcelona", "Espanha", "ZAG", "84", "91")
+console.log(`${Cubarsi.Nome} vale €${Cubarsi.calcularValor().toLocaleString('pt-BR')}`)
 
+const VanDjik = new Jogador("Virgil Van Dijk","34", "Liverpool", "Holanda", "ZAG", "88", "88")
+console.log(`${VanDjik.Nome} vale €${VanDjik.calcularValor().toLocaleString('pt-BR')}`)
+
+const Dias = new Jogador("Rúben Dias","29", "Manchester City", "Portugal", "ZAG", "86", "88")
+console.log(`${Dias.Nome} vale €${Dias.calcularValor().toLocaleString('pt-BR')}`)
+
+const Nuno = new Jogador("Nuno Mendes","24", "PSG", "Portugal", "LE", "86", "89")
+console.log(`${Nuno.Nome} vale €${Nuno.calcularValor().toLocaleString('pt-BR')}`)
+
+const Hakimi = new Jogador("Hakimki","27", "PSG", "Marrocos", "LD", "89", "90")
+console.log(`${Hakimi.Nome} vale €${Hakimi.calcularValor().toLocaleString('pt-BR')}`)
+
+const DeCuyper = new Jogador("De Cuyper","25", "Brigthon", "Bélgica", "LE", "80", "84")
+console.log(`${DeCuyper.Nome} vale €${DeCuyper.calcularValor().toLocaleString('pt-BR')}`)
+
+const Donna = new Jogador("Gianluigi Donnarumma","27", "Manchester City", "Itália", "GOL", "89", "90")
+console.log(`${Donna.Nome} vale €${Donna.calcularValor().toLocaleString('pt-BR')}`)
+
+const Garcia = new Jogador("Joan Garcia","25", "Barcelona", "Espanha", "GOL", "86", "91")
+console.log(`${Garcia.Nome} vale €${Garcia.calcularValor().toLocaleString('pt-BR')}`)
+
+const Courtois = new Jogador("Thibaut Courtois","34", "Barcelona", "Bélgica", "GOL", "90", "90")
+console.log(`${Courtois.Nome} vale €${Courtois.calcularValor().toLocaleString('pt-BR')}`)
+
+const Maignan = new Jogador("Mike Maignan","30", "Milan", "França", "GOL", "86", "87")
+console.log(`${Maignan.Nome} vale €${Maignan.calcularValor().toLocaleString('pt-BR')}`)

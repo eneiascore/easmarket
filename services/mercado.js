@@ -1,3 +1,4 @@
+const { log } = require('console')
 const fs = require('fs')
 const caminhoArquivo = './data/jogadores.json'
 
@@ -33,11 +34,49 @@ function adicionarJogador(jogador) {
     
 }
 
+function editarJogador(nome, novosDados) {
+    const jogadores = lerJogadores()
+
+    const jogador = jogadores.find(j => j.Nome === nome)
+
+    if(!jogador) {
+        console.log("Jogador não encontrado. ")
+        return
+    }
+
+    Object.assign(jogador, novosDados)
+
+    salvarJogadores(jogadores)
+    console.log("Jogador Editado com Sucesso! ");
+    
+}
+
+function removerJogador(nome) {
+    const jogadores = lerJogadores()
+
+    const jogadoresFiltrados = jogadores.filter(j => j.Nome !== nome)
+
+    if(jogadores.length === jogadoresFiltrados.length) {
+        console.log("Jogador não encontrado");
+        return
+    }
+    salvarJogadores(jogadoresFiltrados)
+    console.log("Jogador removido com sucesso! ")
+
+}
+
+function listarJogadores() {
+    return lerJogadores()
+}
+
 module.exports = {
     lerJogadores,
     salvarJogadores,
     adicionarJogador,
-    buscarJogadorPorNome
+    buscarJogadorPorNome,
+    editarJogador,
+    removerJogador,
+    listarJogadores
 
 }
 

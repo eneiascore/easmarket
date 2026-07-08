@@ -1,14 +1,5 @@
 [
   {
-    "Nome": "Vinícius Jr",
-    "Idade": 25,
-    "Nacionalidade": "Brasil",
-    "Clube": "Real Madrid",
-    "Posicao": "PE",
-    "Overall": 90,
-    "Potencial": 93
-  },
-  {
     "Nome": "Lamine Yamal",
     "Idade": 19,
     "Nacionalidade": "Espanha",
@@ -16,5 +7,14 @@
     "Posicao": "PD",
     "Overall": 89,
     "Potencial": 94
+  },
+  {
+    "Nome": "Pedri",
+    "Idade": 23,
+    "Nacionalidade": "Espanha",
+    "Clube": "Barcelona",
+    "Posicao": "MC",
+    "Overall": 89,
+    "Potencial": 92
   }
 ]

@@ -1,18 +1,10 @@
-const { lerJogadores, salvarJogadores } = require('./services/mercado')
+const { lerJogadores, salvarJogadores, adicionarJogador } = require('./services/mercado')
+const Jogador = require('./models/Jogador')
 
-const jogadoresTeste = [
-    {
-        Nome: "Vinícius Jr",
-        Idade: 25,
-        Nacionalidade: "Brasil",
-        Clube: "Real Madrid",
-        Posicao: "PE",
-        Overall: 90,
-        Potencial: 93
-    }
-]
 
-salvarJogadores(jogadoresTeste)
 
 const jogadores = lerJogadores()
 console.log(jogadores)
+
+// const Lamine = new Jogador("Lamine Yamal", 19, "Espanha", "barcelona", "PD", 89, 94)
+// adicionarJogador(Lamine)

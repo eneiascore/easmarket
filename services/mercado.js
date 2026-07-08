@@ -10,8 +10,15 @@ function salvarJogadores(jogadores) {
     fs.writeFileSync(caminhoArquivo, JSON.stringify(jogadores, null, 2))
 }
 
+function adicionarJogador(jogador) {
+    const jogadores = lerJogadores()
+    jogadores.push(jogador)
+    salvarJogadores(jogadores)
+}
+
 module.exports = {
     lerJogadores,
-    salvarJogadores
+    salvarJogadores,
+    adicionarJogador
 }
 
